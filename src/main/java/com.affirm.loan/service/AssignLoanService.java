@@ -149,6 +149,7 @@ public class AssignLoanService {
 
         Map<Integer, Double> yieldMap = new HashMap<>();
 
+        // converting facilityList to Map so that for every loanFacilityMap record,so we don't have to traverse the whole arrayList
         Map<Integer, Facility> facilityMap = new HashMap<Integer, Facility>();
         for(Facility facility: facilityList) {
             facilityMap.put(facility.getId(), facility); // facilityId is unique
