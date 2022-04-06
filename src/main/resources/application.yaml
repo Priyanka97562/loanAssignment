@@ -1,0 +1,10 @@
+spring:
+  profiles.active: local
+  application.name: loan-assignment-service
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: local
